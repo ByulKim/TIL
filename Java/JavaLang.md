@@ -406,3 +406,36 @@ int unboxedValue = boxedValue; // 오토 언박싱 (auto-unboxing)
     - 시스템 속성값 관리
     - 환경값 조회
         - 시스템 속성 값은 추가 및 변경이 가능하지만, 환경값은 조회만 가능하다.
+
+## Math 클래스
+
+---
+
+- 수학 문제들을 해결해주는 클래스
+- 여러 연산들을 메서드로 제공한다.
+- 기능 (static 메서드)
+    - `min()`,`max()`: 최소/최대값
+    - `abs()`: 절대값
+    - `ceil()`,`floor()`,`round()`: 올림, 내림, 반올림
+    - `sqrt()`: 제곱근
+    - `random()`: 0.0 ~ 1.0 사이의 수를 랜덤으로 반환
+
+
+## Random 클래스
+
+---
+
+- java.util 패키지에 속해 있다.
+- `Math.random()`으로 랜덤 수를 구할 수도 있지만`Random`클래스를 사용하면 더 다양한 랜덤 수를 구할 수 있다.
+- 기능
+    - `nextInt()`: int 범위 내의 랜덤 정수 반환
+        - 인자를 추가하면 범위를 설정할 수 있다.
+        - `nextInt(10)`: 0~9까지
+        - `nextInt(10) + 1`: 1 ~ 10 까지
+
+    - `nextDouble()`: 0.0 ~ 1.0 범위 내의 랜덤 실수 반환
+    - `nextBoolean()`: true/false 중 랜덤 반환
+- seed 가 같으면 랜덤의 결과가 같다.
+    ```java
+    Random random = new Random(1);
+    ```
