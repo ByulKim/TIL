@@ -353,6 +353,33 @@ int unboxedValue = boxedValue; // 오토 언박싱 (auto-unboxing)
 - 변환이 필요한 일이 많아 자바에서 자동으로 변환하는 기능을 제공한다.
 - 컴파일 시에 컴파일러가 박싱/언박싱 코드를 추가해준다.
 
+## Class 클래스
+
+---
+
+- 클래스의 정보(메타데이터)를 다루는데 사용된다.
+- 클래스의 속성과 메서드에 대한 정보를 조회/조작 할 수 있다.
+- 기능
+    ```java
+    Class clazz = String.class; // 클래스로 조회
+    Class clazz1 = new String().getClass(); // 인스턴스로 조회
+    Class clazz2 = Class.forName("java.lang.String"); // 문자열로 조회
+    ```
+    - 타입 정보 조회 : 클래스 이름, 슈퍼클래스, 인터페이스, 접근 제한자 등
+    - 리플렉션
+        - 객체를 통해 클래스의 정보를 분석해내는 기법
+        - 클래스에 정의된 메서드, 필드, 생성자 등 조회 → 인스턴스 생성 및 메서드 호출
+        - `getDeclaredFields()`: 모든 필드 반환
+        - `getDeclaredMethods()`: 모든 메서드 반환
+        - `getSuperClass()`: 상위 클래스 반환
+        - `getInterfaces()`: 인터페이스 반환
+        - 동적 로딩,생성
+            - `Class.forName()`메서드를 사용하여 클래스를 동적으로 로딩
+            - `newInstance()`메서드를 통해 새로운 인스턴스 생성
+            - `getDeclaredConstructor().newInstance()`
+    - `@` 어노테이션 처리 : 클래스에 정의된 어노테이션을 조회, 처리
+
+
 
 ## System 클래스
 
