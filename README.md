@@ -34,6 +34,7 @@
 - [LinkedList : 연결 리스트](./DataStructure/LinkedList.md)
 - [Map : 맵](./DataStructure/Map.md)
 - [Tree: 트리](./DataStructure/Tree.md)
+- [Heap, Priority Queue: 힙, 우선순위 큐](./DataStructure/HeapAndPriorityQueue.md)
 
 ### 알고리즘
 - [Big O Notaion : 빅오표기법](./Algorithm/BigONotation.md)
