@@ -42,4 +42,6 @@
 - [Big O Notaion : 빅오표기법](./Algorithm/BigONotation.md)
 
 ### 컴퓨터 시스템
+- [Network](./System/Network.md)
+- [Http](./System/Http.md)
 - [Thread : 스레드, 프로세스](./System/Thread.md)
